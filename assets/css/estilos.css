@@ -9,8 +9,7 @@
     }
 
 body {
-    /*No le pongo los puntos delante de la barra invertida porque no me la toma de esa manera*/
-    background-image: url(/multimedia/fondo.jpg);
+    background-image: url(../multimedia/fondo.jpg);
     color: white;
     list-style: none;
     list-style-type: none;
