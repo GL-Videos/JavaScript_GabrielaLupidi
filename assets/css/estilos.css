@@ -1,0 +1,422 @@
+/*-------------------------------------------------CSS GENERICO------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    }
+
+body {
+    /*No le pongo los puntos delante de la barra invertida porque no me la toma de esa manera*/
+    background-image: url(/multimedia/fondo.jpg);
+    color: white;
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+/*Menú*/
+
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 20px;
+}
+
+.menu li a {
+    margin-top: 20px;
+    padding-right: 20px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 40px;
+}
+
+.menu2 li a {
+    margin-top: 20px;
+    padding-right: 20px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+.menu2 img {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    filter: contrast(100%);
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+    
+}
+
+.logo span::before {
+    content: var(--l);
+    position: absolute;
+    filter: blur(15px);
+}
+
+.logo span::after {
+    content: var(--l);
+    position: absolute;
+    filter: blur(40px);
+    top: 60%;
+}
+
+.logo span:nth-child(1) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(2) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(3) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(4) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(5) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(6) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(7) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(8) {
+    color: rgb(149, 216, 255);
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside a img {
+    display: flex;
+    margin: 80px 0 80px 0;
+    border-radius: 20px;
+}
+
+.tituloIndex {
+    font-size: 30pt;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*------------------------------------------------GALERIA INDEX---------------------------------------------------------------*/
+
+.contenedorGeneral {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+    background-color: #34495ebe;
+    border: #34495E solid 10px;
+    border-radius: 20px;
+    padding: 30px 0 30px 0;
+}
+
+.contenedorPeliculas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.caratulas img {
+    display: flex;
+    width: 150px;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#parrafoRegistro {
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 600;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+}
+
+#btnRegistro {
+    color: white;
+    background-color: #34495E;
+    border-radius: 5px;
+    font-size: 15pt;
+    font-weight: 500;
+    margin-left: 600px;
+}
+
+#confirmarRegistro {
+    font-size: 20pt;
+    font-weight: 500;
+    margin-left: 550px;
+    margin-bottom: 100px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+}
+
+
+/*-----------------------------------------------CSS TRIVIA------------------------------------------------------------------- */
+
+
+
+.contenedor {
+	width: 430px;
+	margin: 50px auto;
+	height: 100%;
+	padding-top: 0px;
+  }
+  
+  #trivia {
+	background-color: #34495E;
+	padding-bottom: 60px;
+	width: 100%;
+	border-radius: 2%;
+	color: #fff;
+	text-align: center;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  #trivia > h1 {
+	text-align: center;
+	padding-top: 25px;
+	font-size: 25px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .pregunta {
+	font-size: 28px;
+	font-weight: 700;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 20px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .respuesta div {
+	padding: 10px 0 0 0;
+	font-size: 20px;
+  }
+  
+  .respuesta div:hover {
+	cursor: pointer;
+	color: #68a7f0;
+  }
+  
+  .respuesta {
+	padding: 0px 0 10px 0px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .respuesta div {
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	border-top: 1px solid grey;
+  }
+  
+  .respuesta div:first-child {
+	border: none;
+  }
+  
+  .chequeo {
+	display: inline-block;
+	width: 200px;
+	margin: 0 auto;
+  }
+  
+  .correcta, .falsa {
+	background-color: #109D59;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4px;
+	float: left;
+	margin-left: 2px;
+	margin-top: 2px;
+  }
+  
+  .falsa {
+	background-color: #DC4437;
+  }
+
+
+  /*-----------------------------------------------CSS VOTACIÓN-----------------------------------------------------------*/
+
+.estiloFormulario {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+.textoPrincipal{
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    margin: 50px 0 30px 30px;
+}
+
+.textoPrincipal span {
+    font-size: 25pt;
+    color: rgb(149, 216, 255);
+}
+
+.formEstilo {
+    margin: 30px;
+    font-weight: bold;
+}
+
+.categoríasForm {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    margin: 10px;
+}
+
+.tamanioInput{
+    border: #34495E solid 3px;
+    width: 700px;
+    height: 40px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.btnCargar {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #34495E;
+    outline: none;
+}
+
+.tituloSecundario {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 30px;
+    text-align: center;
+}
+
+.tablaPeliculas {
+    border: #34495E solid 3px;
+    background-color: #8da8c4;
+    margin: 50px 0 100px 20px;
+    text-align: center;
+}
+
+.tablaPeliculas tr th {
+    border: #34495E solid 3px;
+    padding: 10px;
+    color: #34495E;
+}
+
+.respuestas {
+    color: rgb(48, 48, 48);
+}
+
+.botonBorrar {
+    border-radius: 15px;
+    color: white;
+    background-color: #34495E;
+    padding: 5px;
+}
+
+.parrafoFinal {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+
+/*-------------------------------------------CSS CATEGORIAS-----------------------------------------------*/
+
+.listaCategorias {
+    text-align: center;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin: 100px 0 200px 430px;
+    color: white;
+    justify-content: center;
+    background-color: #34495ebe;
+    border: #34495E solid 10px;
+    border-radius: 20px;
+}
+
+.btnCategoriaPelis {
+    font-size: 15pt;
+    font-weight: 600;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #54687c;
+}
+
+.btnCategoriaSeries {
+    font-size: 15pt;
+    font-weight: 600;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #54687c;
+}
+
+
+
+
+
+
+
+
