@@ -140,6 +140,7 @@ main {
 }
 
 footer {
+    color: white;
     text-shadow: rgb(27, 27, 27) 2px 2px;
     margin-top: 70px;
     margin-bottom: 20px;
