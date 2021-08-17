@@ -1,26 +1,80 @@
-// AJAX CON JQUERY Y JSON
 
-// Creo las constantes para llamar los archivos JSON
+//GALERIA DE INICIO
 
-const carteleraJSON = "../assets/JSON/cartelera.json"
+// Agrega las carátulas de las peliculas
+$('.contenedorPeliculas').append(
+  `<div class="caratulas">
+     <img src="./multimedia/caratulas/01.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/02.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/03.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/04.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/05.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/06.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/07.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/08.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/09.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/10.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/11.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/12.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/13.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/14.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/15.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/16.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/17.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/18.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/19.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/20.jpg"/>
+   </div>
+   <div class="caratulas">
+     <img src="./multimedia/caratulas/21.jpg"/>
+   </div>`,
+ )
+
+
+//CATEGORÍAS DE PELICULAS Y SERIES
+
+// Creo la constante para llamar el archivo JSON
 const categoriasJSON = "../assets/JSON/categorias.json"
 
-// Hago la funcion para que me cree por cada imagen del JSON un div con su clase, dentro del div padre para formar la cartelera de Inicio.
-$.getJSON (carteleraJSON, function(resultado, estado){
-    if (estado === "success") {
-      // console.log(resultado);
-      resultado.forEach(e => {
-        $(".contenedorPeliculas").append(
-          `<div class="caratulas">
-           <img src="${e.imagen}">
-           </div>`
-        )
-      });
-    }
-})
-
 //Creo los botones para desplegar la lista de las categorias
-
 $(".listaCategorias").prepend('<button class="btnCategoriaSeries">Series</button>')
 $(".listaCategorias").prepend('<button class="btnCategoriaPelis">Peliculas</button>')
 
@@ -31,7 +85,7 @@ $(".btnCategoriaPelis").click(() => {
           // console.log(resultado);
       resultado.forEach(e => {
         $(".listaCategorias").append(
-                                        `<h4 class="listaPelis">${e.categoria}</h4>`
+                                        `<a href="/views/catPelis.html" class="listaPelis">${e.categoria}</a>`
         )
       });
     }
@@ -46,10 +100,9 @@ $(".btnCategoriaSeries").click(() => {
           // console.log(resultado);
       resultado.forEach(e => {
         $(".listaCategorias").append(
-                                        `<h4 class="listaSeries">${e.categoria}</h4>`
+                                        `<a href="/views/catSeries.html" class="listaSeries">${e.categoria}</a>`
         )
-      });
-    }
+      })}
   });
   $(".listaPelis").fadeOut("fast");
 });
@@ -57,8 +110,7 @@ $(".btnCategoriaSeries").click(() => {
 
 
 
-// EVENTOS DE JQUERY
-
+//SUSCRIPCIÓN A LAS NOTICIAS
 // Creo un botón al final de la página para que el cliente acepte las noticias
 
 $('.jQuery').append('<p id="parrafoRegistro">QUÉRES RECIBIR NUESTRAS NOVEDADES?</p>');
