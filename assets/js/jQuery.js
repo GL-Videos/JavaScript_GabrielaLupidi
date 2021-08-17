@@ -85,7 +85,7 @@ $(".btnCategoriaPelis").click(() => {
           // console.log(resultado);
       resultado.forEach(e => {
         $(".listaCategorias").append(
-                                        `<a href="/views/catPelis.html" class="listaPelis">${e.categoria}</a>`
+                                        `<a href="../views/catPelis.html" class="listaPelis">${e.categoria}</a>`
         )
       });
     }
@@ -100,7 +100,7 @@ $(".btnCategoriaSeries").click(() => {
           // console.log(resultado);
       resultado.forEach(e => {
         $(".listaCategorias").append(
-                                        `<a href="/views/catSeries.html" class="listaSeries">${e.categoria}</a>`
+                                        `<a href="../views/catSeries.html" class="listaSeries">${e.categoria}</a>`
         )
       })}
   });
