@@ -149,4 +149,50 @@ footer {
     font-weight: 600;
 }
 
+/*Pop Up*/
+
+.popup-wrapper {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+.popup {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    position: relative;
+}
+ 
+.popup a {
+    background: #34495E;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 30px auto;
+    display: block;
+    width: 50%;
+}
+ 
+.popup a:hover {
+    background: #4f6e8d;
+    transition: all 0.2s;
+}
+ 
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 

@@ -5,6 +5,9 @@ const fondoRegistro = document.querySelector(".fondoRegistro");
 const frenteUsuarios = document.querySelector(".frenteUsuarios");
 const formularioLogin = document.querySelector(".formularioLogin");
 const formularioRegistro = document.querySelector(".formularioRegistro");
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
+const popRegistro = document.getElementById("popRegistro");
 
 //SELECTORES
 
@@ -12,6 +15,9 @@ document.getElementById("btnIniciar").addEventListener("click", iniciarSesion);
 document.getElementById("btnRegistro").addEventListener("click", registro);
 document.getElementById("btnSesion").addEventListener("click", sesionUsuario);
 document.getElementById("btnEnviar").addEventListener("click", enviarRegistro);
+document.getElementById("btnSesion").addEventListener("click", confirmarSesion);
+document.getElementById("btnEnviar").addEventListener("click", confirmarRegistro);
+
 
 //FUNCIONES
 
@@ -48,4 +54,42 @@ function enviarRegistro() {
     localStorage.setItem("Nombre:", nombreUsuario.value);
     localStorage.setItem("Correo Electrónico:", email.value);
     localStorage.setItem("Contraseña:", contrasenia.value);
-}
+};
+
+//Pop up que confirma el inició de sesión
+function confirmarSesion(evento) {
+    evento.preventDefault();
+
+    popRegistro.textContent = "¡Usted ingresó correctamente!"
+    popup.style.display = "block";
+
+    close.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+     
+    popup.addEventListener("click", e => {
+        // console.log(e);
+        if (e.target.className === "popup-wrapper") {
+            popup.style.display = "none";
+        }});
+    };
+
+
+//Pop up que confirma el registro de usuario
+function confirmarRegistro(evento) {
+    evento.preventDefault();
+
+    popRegistro.textContent = "¡Usted se registró correctamente!"
+    popup.style.display = "block";
+
+
+    close.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+     
+    popup.addEventListener("click", e => {
+        // console.log(e);
+        if (e.target.className === "popup-wrapper") {
+            popup.style.display = "none";
+        }});
+    };
