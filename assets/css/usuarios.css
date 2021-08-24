@@ -195,4 +195,47 @@ footer {
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .fondoUsuarios{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .fondoUsuarios div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .frenteUsuarios{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .frenteUsuarios form{
+        position: relative;
+    }
+
+    .textoUsuarios a img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .textoUsuarios p {
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
 

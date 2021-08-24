@@ -85,6 +85,8 @@ function imprimirVotos() {
         console.log("El usuario no cargo ninguna película");
     }
 }
+
+//Función para borrar los datos ingresados
 function borrarVotos(id) {
     let borrar = JSON.parse(localStorage.getItem("votos"));
     let actualizo = borrar.filter(e => e.id != id);

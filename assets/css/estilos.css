@@ -55,12 +55,6 @@ nav {
     font-weight: 600;
 }
 
-.menu2 img {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
-}
-
 .logo {
     font-size: 60px;
     font-weight: bold;
@@ -122,13 +116,6 @@ aside a img {
     border-radius: 20px;
 }
 
-.tituloIndex {
-    font-size: 30pt;
-    text-shadow: rgb(27, 27, 27) 3px 3px;
-    text-align: center;
-    margin-top: 10px;
-}
-
 footer {
     text-shadow: rgb(27, 27, 27) 2px 2px;
     margin-top: 70px;
@@ -143,12 +130,19 @@ footer {
 .contenedorGeneral {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 50px;
+    margin: 0 20px 50px 20px;
     justify-content: center;
     background-color: #34495ebe;
     border: #34495E solid 10px;
     border-radius: 20px;
     padding: 30px 0 30px 0;
+}
+
+.tituloIndex {
+    font-size: 30pt;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .contenedorPeliculas {
@@ -433,6 +427,17 @@ footer {
     text-shadow: rgb(39, 39, 39) 2px 2px;
 }
 
+.categoriasGenero {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contenedorGenero {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
 .textoGenero {
     font-size: 25px;
     text-shadow: rgb(39, 39, 39) 2px 2px;
@@ -440,16 +445,19 @@ footer {
 }
 
 .caratulasGenero {
-    margin-left: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding-left: 10px;
     border: #34495E solid 8px;
     background-color: #34495ec4;
-    width: 95%;
+    width: 97%;
     height: 250px;
 }
 
 .caratulasGenero img {
-    transform: translateX(15px);
-    margin-top: 20px;
     width: 150px;
     height: 200px;
     border: #54687c solid 4px;
@@ -466,6 +474,267 @@ footer {
     padding: 15px;
     border-radius: 20px;
 }
+
+
+/*-----------------------------------------MEDIA QUERIES---------------------------------------------------*/
+/*CSS GENERICO*/
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu li a {
+        font-size: 18pt;
+        font-weight: 500;
+    }
+    
+    .menu2 {
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    
+    .menu2 li a {
+        font-size: 15pt;
+        font-weight: 500;
+    }
+    
+    .logo {
+        font-size: 40px; 
+    }
+
+    aside a img {
+        display: flex;
+        width: 340px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+/*GALERIA INDEX*/
+
+    .contenedorGeneral {
+        margin: 0 5px 0 10px;
+    }
+
+    .tituloIndex {
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+
+    #parrafoRegistro {
+        margin: 25px 10px 0 10px;
+        font-size: 20pt;
+        
+    }
+    
+    #btnRegistro {
+        padding: 5px;
+        margin: 20px 0 0 125px;
+    }
+    
+    #confirmarRegistro {
+        font-size: 15pt;
+        font-weight: 500;
+        margin: 20px 0 20px 100px;
+        
+    }
+
+/*CSS TRIVIA*/
+
+    .contenedor {
+        width: 300px;
+    }
+    
+    #trivia {
+        background-color: #34495E;
+        padding-bottom: 60px;
+        width: 100%;
+        border-radius: 2%;
+        color: #fff;
+        text-align: center;
+        text-shadow: rgb(27, 27, 27) 2px 2px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    
+    #trivia > h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .pregunta {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .respuesta div {
+        padding: 10px 0 0 0;
+        font-size: 20px;
+    }
+    
+    .respuesta {
+        padding: 0px 0 10px 0px;
+    }
+    
+    .respuesta div {
+        padding-bottom: 15px;
+        border-top: 2px solid grey;
+    }
+
+
+/*CSS VOTACIÓN*/
+
+    .textoPrincipal{
+        font-size: 18px;
+        margin: 50px 10px 30px 10px;
+    }
+
+    .textoPrincipal span {
+        font-size: 20pt;
+    }
+
+    .formEstilo {
+        margin: 10px;
+    }
+
+    .categoríasForm {
+        font-size: 10pt;
+        font-weight: 600;
+        text-shadow: rgb(39, 39, 39) 2px 2px;
+        margin: 5px;
+    }
+
+    .tamanioInput{
+        width: 340px;
+    }
+
+    .btnCargar {
+        font-size: 8pt;
+        font-weight: 600;
+    }
+
+    .tituloSecundario {
+        font-size: 17pt;
+        font-weight: 600;
+    }
+
+    .tablaPeliculas {
+        width: 300px;
+        height: auto;
+        border: #34495E solid 3px;
+        background-color: #8da8c4;
+        margin: 50px 0 100px 5px;
+        text-align: center;
+    }
+
+    .tablaPeliculas tr th {
+        font-size: 10pt;
+        border: #34495E solid 3px;
+        padding: 4px;
+        color: #34495E;
+    }
+
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.3333333333%;
+    }
+
+    .col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+    }
+
+    .respuestas {
+        color: rgb(48, 48, 48);
+    }
+
+    .botonBorrar {
+        font-size: 8pt;
+        border-radius: 8px;
+    }
+
+    .parrafoFinal {
+        color: white;
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        font-size: 13pt;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+/*CSS CATEGORIAS*/
+
+    .listaCategorias {
+        width: 250px;
+        height: auto;
+        padding: 1px;
+        margin: 30px 10px 0 60px;
+    }
+
+    .listaCategorias a {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .btnCategoriaPelis {
+        font-size: 12pt;
+        margin: 15px;
+        padding: 10px;
+
+    }
+    
+    .btnCategoriaSeries {
+        font-size: 12pt;
+        margin: 15px;
+        padding: 10px;
+    }
+
+/*CATEGORÍAS GÉNERO*/
+
+    .titulosGeneros {
+        font-size: 20pt;
+    }
+
+    .textoGenero {
+        font-size: 15pt;
+    }
+    
+    .caratulasGenero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        border: #34495E solid 6px;
+        padding: 5px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .caratulasGenero img {
+        width: 100px;
+        height: 150px;
+        border: #54687c solid 2px;
+    }
+    
+    .linkCatalogo {
+        font-size: 20px;
+        margin: 50px 0 10px 70px;
+    }
+    
+
+}
+
+
 
 
 
