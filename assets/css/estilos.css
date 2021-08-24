@@ -477,9 +477,10 @@ footer {
 
 
 /*-----------------------------------------MEDIA QUERIES---------------------------------------------------*/
-/*CSS GENERICO*/
+/*Celulares*/
 
 @media (max-width: 600px) {
+    /*CSS GENERICO*/
     nav {
         justify-content: center;
     }
@@ -729,6 +730,266 @@ footer {
     .linkCatalogo {
         font-size: 20px;
         margin: 50px 0 10px 70px;
+    }
+    
+
+}
+
+
+/*Tablets*/
+
+@media (max-width: 1025px) {
+    /*CSS GENERICO*/
+    nav {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu li a {
+        font-size: 19pt;
+        font-weight: 500;
+    }
+    
+    .menu2 {
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    
+    .menu2 li a {
+        font-size: 17pt;
+        font-weight: 500;
+    }
+    
+    .logo {
+        transform: translateX(20px);
+        font-size: 40px; 
+    }
+
+    aside a img {
+        display: flex;
+        width: 600px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+/*GALERIA INDEX*/
+
+    .contenedorGeneral {
+        margin: 0 10px 0 10px;
+    }
+
+    .tituloIndex {
+        font-size: 25pt;
+        margin-bottom: 30px;
+    }
+
+    #parrafoRegistro {
+        margin: 25px 10px 0 10px;
+        font-size: 25pt;
+        
+    }
+    
+    #btnRegistro {
+        padding: 10px;
+        margin: 30px 0 0 440px;
+    }
+    
+    #confirmarRegistro {
+        font-size: 15pt;
+        font-weight: 500;
+        margin: 20px 0 20px 420px;
+        
+    }
+
+/*CSS TRIVIA*/
+
+    .contenedor {
+        width: 600px;
+    }
+    
+    #trivia {
+        background-color: #34495E;
+        padding-bottom: 60px;
+        width: 100%;
+        border-radius: 2%;
+        color: #fff;
+        text-align: center;
+        text-shadow: rgb(27, 27, 27) 2px 2px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    
+    #trivia > h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .pregunta {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .respuesta div {
+        padding: 10px 0 0 0;
+        font-size: 20px;
+    }
+    
+    .respuesta {
+        padding: 0px 0 10px 0px;
+    }
+    
+    .respuesta div {
+        padding-bottom: 15px;
+        border-top: 2px solid grey;
+    }
+
+
+/*CSS VOTACIÓN*/
+
+    .textoPrincipal{
+        font-size: 20pt;
+        margin: 50px 10px 30px 20px;
+    }
+
+    .textoPrincipal span {
+        font-size: 30pt;
+    }
+
+    .formEstilo {
+        margin: 20px;
+    }
+
+    .categoríasForm {
+        font-size: 15pt;
+        font-weight: 600;
+        margin: 5px;
+    }
+
+    .tamanioInput{
+        width: 800px;
+    }
+
+    .btnCargar {
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
+    .tituloSecundario {
+        font-size: 25pt;
+        font-weight: 600;
+    }
+
+    .tablaPeliculas {
+        width: 800px;
+        height: auto;
+        border: #34495E solid 3px;
+        background-color: #8da8c4;
+        margin: 50px 0 100px 15px;
+        text-align: center;
+    }
+
+    .tablaPeliculas tr th {
+        font-size: 15pt;
+        border: #34495E solid 3px;
+        padding: 5px;
+        color: #34495E;
+    }
+
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.3333333333%;
+    }
+
+    .col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+    }
+
+    .respuestas {
+        color: rgb(48, 48, 48);
+    }
+
+    .botonBorrar {
+        font-size: 10pt;
+        border-radius: 8px;
+    }
+
+    .parrafoFinal {
+        color: white;
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        font-size: 15pt;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+/*CSS CATEGORIAS*/
+
+    .listaCategorias {
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        width: 400px;
+        height: auto;
+        padding: 1px;
+        margin: 100px 10px 100px 320px;
+    }
+
+    .listaCategorias a {
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    .btnCategoriaPelis {
+        font-size: 20pt;
+        margin: 15px;
+        padding: 10px;
+
+    }
+    
+    .btnCategoriaSeries {
+        font-size: 20pt;
+        margin: 15px;
+        padding: 10px;
+    }
+
+/*CATEGORÍAS GÉNERO*/
+
+    .titulosGeneros {
+        font-size: 25pt;
+    }
+
+    .textoGenero {
+        font-size: 20pt;
+    }
+    
+    .caratulasGenero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        border: #34495E solid 8px;
+        padding: 15px;
+        width: 95%;
+        height: auto;
+    }
+    
+    .caratulasGenero img {
+        width: 150px;
+        height: 200px;
+        border: #54687c solid 4px;
+    }
+    
+    .linkCatalogo {
+        font-size: 20px;
+        margin: 0 0 10px 70px;
     }
     
 
